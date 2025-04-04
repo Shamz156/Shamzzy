@@ -1,0 +1,791 @@
+/* Ensure the body takes up full height */
+html, body {
+    height: 142%;  /* Ensures that the body will extend to the full height of the viewport */
+    margin: 0;     /* Removes default margin around the body */
+    padding: 0;    /* Removes default padding */
+    overflow-x: hidden;  /* Prevents horizontal overflow */
+}
+
+/* Make sure the body content can overflow */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+h1 {
+    color: #fffdfe;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 50px;
+    border-radius: 10px;
+    background-color: #adc6f8;
+    text-align: center ;
+    padding: 1vw; /* space inside of your container */
+}
+
+p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:italic;
+    font-weight: bolder;
+    font-size: xx-large; 
+    color: #497bdf;
+    text-align: center;
+    padding: 1vw; /* space inside of your container */
+    
+}
+
+
+
+/* Set a background image for the entire website */
+body {
+    background-image: url('blue.avif'); /* Replace with your image path */
+    background-size: 45%; /* Zoom out the background image */
+    background-position: center; /* Center the image */
+    background-repeat:repeat; /* Prevent repeating the image */
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center; /* Centers links in a row */
+    gap: 50px; /* Adjusts spacing between links */
+    position: absolute;
+    top: 100px; /* Adjust top spacing */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-link {
+    font-style: italic;
+    font-size: 20px;
+    font-size:bolder;
+    color: rgb(231, 107, 146); /* Adjust color if needed */
+}
+
+/* Background for About Me */
+.about-section {
+    background: url('assets/BUTTERB.jpg') no-repeat center center/cover;
+    padding: 50px;
+    color: white; /* Adjust text color for contrast */
+}
+
+/* Background for Contact */
+.contact-section {
+    background: url('assets/contact-bg.jpg') no-repeat center center/cover;
+    padding: 50px;
+    color: white; /* Adjust text color for contrast */
+}
+
+/* Style for the .first-para */
+.first-para {
+    font-family: "Outfit", sans-serif; /* Custom font style */
+    font-size: 16px;
+    color: #f5f2f3; /* Default color for the description text */
+    line-height: 1.6;
+    border-radius: 10px;
+    word-spacing: 0px;
+    text-align: center; /* Centers the links */
+    margin-top: 20px; /* Adjust this value to move the links higher or lower */
+    
+}
+
+
+/* Style for the links inside .first-para */
+.first-para a {
+    font-size: 30px; 
+    color: #6992d8; /* Default link color */
+    text-decoration: none; /* Removes underline */
+    margin: 0 40px; /* Adds space between links */
+    font-weight: bold; /* Makes the links bold */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Change color when hovered */
+.first-para a:hover {
+    color: #9512fa; /* Light pink color when hovered */
+}
+
+
+
+
+/* For the body, ensuring the top of the page has some padding */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures images wrap if the screen is too small */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Aligns images properly */
+    gap: 10px; /* Adds space between images */
+}
+
+.flower-image {
+    width: 200px; /* Fixed size */
+    height: 200px; /* Fixed size */
+    border-radius: 50%; /* Makes them perfect circles */
+    object-fit: cover; /* Ensures the image fills the circle */
+    object-position: center; /* Centers the image inside the circle */
+    transition: transform 0.5s ease-in-out;
+}
+
+.flower-image:hover {
+    transform: translateY(-10px); /* Moves up slightly when hovered */
+}
+
+
+.myself{
+    font-family: "Outfit", sans-serif; /* Custom font style */
+    font-size: 16px;
+    color: #f7f6fa; /* Color for the description text */
+    line-height: 1.6;
+    padding: 3vw; /* space inside of your container */
+    margin: 2vw 10vw 2vw 10vw; /* space outside of your container */
+    text-align:left;
+    background-color: #f8a0bd;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* Style the form box */
+.contact-form-box {
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f3a2ba;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px #e44f86;
+    text-align: left;
+}
+
+/* Style form fields */
+.contact-form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fffdfe;
+}
+
+.contact-form-box label{
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    color: #f7f6fa;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+    width: 70%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #f0759e;
+    border-radius: 5px;
+}
+
+/* Style the button */
+.contact-form-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #bb7de4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.contact-form-box button:hover {
+    background-color: #88cae7;
+}
+
+.get-directions {
+    display: inline-block;
+    font-family: "Paytone One", sans-serif; /* or use Rammetto One */
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #ec83a6; /* Bright eye-catching color */
+    padding: 6px 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+.get-directions:hover {
+    background-color: #ef3a70;
+    transform: scale(1.05);
+}
+.contact-link {
+    display: inline-block;
+    font-family: "Paytone One", sans-serif; /* or use Rammetto One */
+    font-size: 16px;
+
+    color: white;
+    background-color: #ed84a7; /* Bright eye-catching color */
+    padding: 6px 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgb(117, 190, 243);
+}
+.contact-link:hover {
+    color: #adc6f8; /* Changes to bright orange */
+    text-decoration: underline; /* Optional for emphasis */
+}
+
+
+
+.video-container {
+    padding: 5px; /* Optional: adds spacing around the video */
+    display: flex;
+    justify-content:left;
+    align-items: left;
+    border-radius: 5px; /* Optional: rounds the corners */
+}
+
+.content-container {
+    display: flex; /* Places video and text side by side */
+    align-items: flex-start; /* Aligns both elements at the top */
+    gap: 20px; /* Adds space between video and text */
+    height:100;
+}
+
+.text-container {
+    max-width: 600px; /* Limits text width for readability */
+}
+
+.title {
+    font-family: "Syne ExtraBold", sans-serif; /* Unique bold font */
+    font-size: 17px;
+    color: #fdfdfd; /* Title color */
+    margin-bottom: 10px; /* Space between title and description */
+    text-align: center;
+    background-color: #adc6f8;
+    border-radius: 5px;
+    padding: 1vw; /* space inside of your container */
+    margin: 0; /* space outside of your container */
+}
+
+.animation-description {
+    font-family: "Outfit", sans-serif; /* Custom font style */
+    font-size: 16px;
+    color: #f7f6fa; /* Color for the description text */
+    line-height: 1.6;
+    background-color: #f8a0bd;
+    border-radius: 10px;
+    text-align: left ;
+    padding: 3vw; /* space inside of your container */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fffeff;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    width: 100px; /* Smaller size */
+    height: 200px; /* Smaller size */
+    margin-left: 200px; /* Aligns the carousel to the left */
+    margin-top: 100px; /* Adds space on top */
+    perspective: 5000px;
+    
+}
+
+.spinner {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Use absolute to ensure it's positioned correctly */
+    transform-style: preserve-3d;
+    animation: spin 10s infinite linear;
+}
+
+.spinner img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    transform-origin: center;
+    transition: transform 0.8s;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgb(111, 81, 245);
+}
+
+/* Positioning images in a 3D circle */
+.spinner img:nth-child(1) { transform: rotateY(0deg) translateZ(150px); }
+.spinner img:nth-child(2) { transform: rotateY(36deg) translateZ(150px); }
+.spinner img:nth-child(3) { transform: rotateY(72deg) translateZ(150px); }
+.spinner img:nth-child(4) { transform: rotateY(108deg) translateZ(150px); }
+.spinner img:nth-child(5) { transform: rotateY(144deg) translateZ(150px); }
+.spinner img:nth-child(6) { transform: rotateY(180deg) translateZ(150px); }
+.spinner img:nth-child(7) { transform: rotateY(216deg) translateZ(150px); }
+.spinner img:nth-child(8) { transform: rotateY(252deg) translateZ(150px); }
+.spinner img:nth-child(9) { transform: rotateY(288deg) translateZ(150px); }
+.spinner img:nth-child(10) { transform: rotateY(324deg) translateZ(150px); }
+
+/* Animation */
+@keyframes spin {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+
+
+/* Styling the project description */
+/* Description Styling */
+.project-description {
+    margin-top: 20px; /* Space between carousel and description */
+    width: 80%; /* Adjust width of the description */
+    margin-left: 30px; /* Keeps it on the left side, consistent with carousel */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #e855d4; /* Dark gray for readability */
+    line-height: 1.6;
+}
+
+.project-description {
+    font-family: "Outfit", sans-serif; /* Custom font style */
+    font-size: 16px;
+    color: #f7f6fa; /* Color for the description text */
+    line-height: 1.6;
+    background-color: #f8a0bd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project-description strong {
+    font-weight: bold;
+    color: #ef5b98; /* A blue color for the title */
+}
+
+
+
+
+
+
+
+
+
+
+/* Second Carousel (Chain-Like Stairs Effect) */
+.carousel-2 {
+    position: relative;
+    width: 100px; /* Reduced slightly for a compact look */
+    height: 100px;
+    margin-left: 300px; /* Moves it slightly left while keeping visibility */
+    margin-top: 0px;
+    perspective: 1250px; /* Keeps depth controlled */
+}
+
+.spinner-2 {
+    width: 50%;
+    height: 50%;
+    position: fixed; /* Fixed position relative to the viewport */
+    top: 50%; /* Adjust this value to move it vertically */
+    left: 25%; /* Adjust this value to move it horizontally */
+    transform-style: preserve-3d;
+    animation: spin-stairs 20s infinite linear;
+}
+
+
+
+.spinner-2 a {
+    position: absolute;
+    display: block;
+}
+
+.spinner-2 img {
+    width: 120px; /* Reduced slightly to make space */
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgb(62, 125, 234);
+    transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
+    object-fit: cover;
+}
+
+/* Pause animation on hover */
+.carousel-2:hover .spinner-2 {
+    animation-play-state: paused;
+}
+
+/* Hover effect to slightly scale images */
+.spinner-2 a:hover img {
+    transform: scale(1.2); /* Slightly less intense */
+    box-shadow: 0px 6px 15px rgba(232, 10, 154, 0.8);
+}
+
+/* Staggered Positioning (Chain Effect going Down) */
+.spinner-2 a:nth-child(1) { 
+    transform: rotateY(0deg) translateZ(350px) translateY(0px); 
+}
+.spinner-2 a:nth-child(2) { 
+    transform: rotateY(45deg) translateZ(350px) translateY(20px); /* Reduced translateY for closer positioning */
+}
+.spinner-2 a:nth-child(3) { 
+    transform: rotateY(90deg) translateZ(350px) translateY(40px); 
+}
+.spinner-2 a:nth-child(4) { 
+    transform: rotateY(135deg) translateZ(350px) translateY(60px); 
+}
+.spinner-2 a:nth-child(5) { 
+    transform: rotateY(180deg) translateZ(350px) translateY(80px); 
+}
+.spinner-2 a:nth-child(6) { 
+    transform: rotateY(225deg) translateZ(350px) translateY(100px); 
+}
+.spinner-2 a:nth-child(7) { 
+    transform: rotateY(270deg) translateZ(350px) translateY(120px); 
+}
+.spinner-2 a:nth-child(8) { 
+    transform: rotateY(315deg) translateZ(350px) translateY(140px); 
+}
+
+/* Stair-Like Spinning Animation */
+@keyframes spin-stairs {
+    0% { transform: rotateY(0deg); } 
+    100% { transform: rotateY(360deg); }
+}
+
+
+/* Section containing both carousels */
+.showcase-section-3 {
+    display: flex;
+    justify-content: space-between; /* Keeps space between the carousels */
+    gap: 200px; /* Add a gap between the carousels */
+    width: 60%; /* Ensure it spans the full width */
+    padding: 20px; /* Adds some padding to the container */
+}
+
+/* First Carousel (Apply chain-like effect) */
+.carousel-6 {
+    position: relative;
+    width: 250px; /* Adjust width as needed */
+    height: 250px;
+    margin-left: auto;/* This pushes the carousel to the right */
+    margin-right: 0;/* Ensures it stays on the right */
+    perspective: 1250px; /* Set depth effect */
+}
+
+.spinner-6 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 120%;
+    
+    left: 45%; /* Adjust this value to move it horizontally */
+    transform-style: preserve-3d;
+    animation: spin-stairs 20s infinite linear;
+}
+
+.spinner-6 a {
+    position: absolute;
+    display: block;
+    width: 100;
+    height: 100;
+}
+
+.spinner-6 img {
+    width: 170px;
+    height: 170px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgb(83, 104, 241);
+    transition: transform 1s ease-in-out, box-shadow 1s ease-in-out;
+    object-fit: cover; /* Ensure images cover the area without stretching */
+}
+
+/* Pause animation on hover */
+.carousel-6:hover .spinner-6 {
+    animation-play-state: paused;
+}
+
+/* Hover effect to slightly scale images */
+.spinner-6 a:hover img {
+    transform: scale(1.2);
+    box-shadow: 0px 6px 15px rgba(253, 236, 56, 0.977);
+}
+
+/* Staggered Positioning (Chain Effect) */
+.spinner-6 a:nth-child(1) { 
+    transform: rotateY(0deg) translateZ(350px) translateY(0px); 
+}
+.spinner-6 a:nth-child(2) { 
+    transform: rotateY(45deg) translateZ(350px) translateY(20px); 
+}
+.spinner-6 a:nth-child(3) { 
+    transform: rotateY(90deg) translateZ(350px) translateY(40px); 
+}
+.spinner-6 a:nth-child(4) { 
+    transform: rotateY(135deg) translateZ(350px) translateY(60px); 
+}
+.spinner-6 a:nth-child(5) { 
+    transform: rotateY(180deg) translateZ(350px) translateY(80px); 
+}
+.spinner-6 a:nth-child(6) { 
+    transform: rotateY(225deg) translateZ(350px) translateY(100px); 
+}
+.spinner-6 a:nth-child(7) { 
+    transform: rotateY(270deg) translateZ(350px) translateY(120px); 
+}
+.spinner-6 a:nth-child(8) { 
+    transform: rotateY(315deg) translateZ(350px) translateY(140px); 
+}
+
+/* Stair-Like Spinning Animation */
+@keyframes spin-stairs {
+    0% { transform: rotateY(0deg); } 
+    100% { transform: rotateY(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+/* Carousel Styling */
+.carousel-3 {
+    position: relative;
+    width: 300px; /* Set the width */
+    height: 300px; /* Set the height */
+    margin-left: 200px;
+    margin-top: 100px;
+    perspective: 1200px; /* 3D effect */
+}
+
+.spinner-3 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d; /* Ensure children are positioned in 3D space */
+    animation: spin 10s infinite linear; /* Spin animation */
+}
+
+.spinner-3 img {
+    width: 120px; /* Set all images to the same width */
+    height: 120px; /* Set all images to the same height */
+    position: absolute;
+    transform-origin: left;
+    transition: transform 0.8s;
+    border-radius: 15px;
+    object-fit: cover; /* Make sure images fill the box */
+    box-shadow: 0px 4px 10px rgb(240, 77, 147);
+}
+
+/* Positioning images in a 3D circle */
+.spinner-3 img:nth-child(1) { transform: rotateY(0deg) translateZ(150px); }
+.spinner-3 img:nth-child(2) { transform: rotateY(51.4deg) translateZ(150px); }
+.spinner-3 img:nth-child(3) { transform: rotateY(102.8deg) translateZ(150px); }
+.spinner-3 img:nth-child(4) { transform: rotateY(154.2deg) translateZ(150px); }
+.spinner-3 img:nth-child(5) { transform: rotateY(205.6deg) translateZ(150px); }
+.spinner-3 img:nth-child(6) { transform: rotateY(257deg) translateZ(150px); }
+.spinner-3 img:nth-child(7) { transform: rotateY(308.4deg) translateZ(150px); }
+
+/* 3D Spin Animation */
+@keyframes spin {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+
+/* Carousel Styling */
+.carousel-4 {
+    position: relative;
+    width: 300px; /* Set the width */
+    height: 300px; /* Set the height */
+    margin-left: 200px;
+    margin-top: 100px;
+    perspective: 1200px; /* 3D effect */
+}
+
+.spinner-4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d; /* Ensure children are positioned in 3D space */
+    animation: spin 10s infinite linear; /* Spin animation */
+}
+
+.spinner-4 img {
+    width: 120px; /* Set all images to the same width */
+    height: 120px; /* Set all images to the same height */
+    position: absolute;
+    transform-origin: left;
+    transition: transform 0.8s;
+    border-radius: 15px;
+    object-fit: cover; /* Make sure images fill the box */
+    box-shadow: 0px 4px 10px rgb(240, 77, 147);
+}
+
+/* Positioning images in a 3D circle */
+.spinner-4 img:nth-child(1) { transform: rotateY(0deg) translateZ(150px); }
+.spinner-4 img:nth-child(2) { transform: rotateY(51.4deg) translateZ(150px); }
+.spinner-4 img:nth-child(3) { transform: rotateY(102.8deg) translateZ(150px); }
+.spinner-4 img:nth-child(4) { transform: rotateY(154.2deg) translateZ(150px); }
+.spinner-4 img:nth-child(5) { transform: rotateY(205.6deg) translateZ(150px); }
+.spinner-4 img:nth-child(6) { transform: rotateY(257deg) translateZ(150px); }
+.spinner-4 img:nth-child(7) { transform: rotateY(308.4deg) translateZ(150px); }
+.spinner-4 img:nth-child(8) { transform: rotateY(359.8deg) translateZ(150px); }
+
+/* 3D Spin Animation */
+@keyframes spin {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+
+
+
+
+
+
+
+
+/* Common Styles for All Sliders */
+.slider-container,
+.slider-container-2,
+.slider-container-3 {
+    width: 100%; /* Full width of the page */
+    max-width: 800px; /* Maximum width for all sliders */
+    margin: 10px auto; /* Margin to space them out vertically */
+    position: relative; /* Ensures proper placement */
+    overflow: hidden; /* Prevents overflowing images */
+}
+
+/* All sliders are flex containers for the slide elements */
+.slider, .slider-2 {
+    display: flex;
+    animation: slide 20s infinite; /* Animates the slides */
+}
+
+/* Each Slide */
+.slider .slide, .slider-2 .slide-2{
+    width: 100%; /* Each slide takes the full container width */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Images inside the slides */
+.slider .slide img, .slider-2 .slide-2 img{
+    width: 100%; /* Make images responsive */
+    height: 100%; /* Ensure height is consistent */
+    object-fit: contain; /* Avoid cropping images */
+    transition: transform 10s ease; /* Add smooth transition when changing */
+}
+
+/* Keyframes for the sliding animation */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(-400%); }
+}
+
+
+
+
+
+/* Container for the bouncing images */
+.container {
+    display: flex;
+    justify-content: center; /* Centers the images horizontally */
+    gap: 15px; /* Adds small space between images */
+    margin-bottom: 20px; /* Optional: Adds space below images */
+} 
+
+/* Add some basic bouncing animation to each image */
+.bouncing-image, .bouncing-image2, .bouncing-image3, .bouncing-image4 {
+    animation: bounce 2s infinite alternate;
+    
+}
+
+/* Keyframes for bouncing animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Adjust the bounce height */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Styling for the description */
+.content-container2 {
+    display: flex;
+    justify-content: center; /* Centers the description horizontally */
+    padding: 20px;
+}
+
+.text-container2 {
+    max-width: 700px; /* Optional: limits the width of the text */
+    text-align: left; /* Aligns text to the left */
+    justify-content: center;
+}
+
+/* Custom styling for the animation description */
+.inter-description {
+    font-family: "Outfit", sans-serif; /* Custom font */
+    font-size: 16px;
+    color: #f7f6fa; /* Color for the description text */
+    line-height: 1.6;
+    background-color: #f8a0bd; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    text-align: left ; /* Force left-aligned text */
+    padding: 1vw; /* Padding inside the container */
+    margin-top: 8px; /* Optional: Adds space above the description */
+}
+
+/* Container for the bouncing images */
+.container2 {
+    display: flex; /* Enables flexbox */
+    justify-content: space-around; /* Distributes images with space between them */
+    align-items: center; /* Vertically center images if they are different heights */
+    height: 40vh; /* Ensure container height fills the screen */
+}
+
+/* Styling for each bouncing image */
+.bouncing-image, .bouncing-image2, .bouncing-image3 {
+    width: 400px; /* Adjust the width of the images */
+    height: 400px; /* Adjust the height of the images */
+    object-fit: cover; /* Ensures the images fill their container without stretching */
+    animation: bounce 2s infinite ease-in-out; /* Bouncing animation */
+    margin-top: 100px; /* Add margin to push the image lower initially*/
+}
+
+
+/* Styling for each bouncing image */
+.bouncing-image4{
+    width: 200px; /* Adjust the width of the images */
+    height: 200px; /* Adjust the height of the images */
+    object-fit: cover; /* Ensures the images fill their container without stretching */
+    animation: bounce 2s infinite ease-in-out; /* Bouncing animation */
+
+}
+/* Adjust animation for bouncing effect */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the same position */
+    }
+    50% {
+        transform: translateY(-20px); /* Moves the images up by 20px */
+    }
+}
